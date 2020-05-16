@@ -14,6 +14,7 @@ print(ourTotalAges)
 #void functions
 
 def myVoidFunction(mytext):
+    print(mytext)
 
 
 

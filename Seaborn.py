@@ -8,7 +8,3 @@ df = df.astype(float)
 fig, ax = plt.subplots(1,1)
 sns.heatmap(df, annot=True, ax=ax, fmt="g")
 plt.show()
-
-
-
-

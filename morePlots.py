@@ -4,13 +4,14 @@ import numpy as np
 x = np.random.randn(30)
 y = np.random.randn(30)
 
-fig, ax = plt.subplots(1,1)
+fig, ax = plt.subplots(1,1,figsize=(20,10))
 ax.scatter(x,y)
 ax.set_title('My Scatter Plot')
 ax.set_xticklabels(ax.get_xticklabels(), rotation=60, ha='right')
 ax.set_xlabel("My x Axis")
 ax.set_ylabel('My y Axis')
 #ax.set_xticks(np.arange(-4,4.5,0.5))
+#plt.tight_layout()
 plt.savefig('MyFirstScatter.png')
 plt.show()
 

@@ -24,9 +24,19 @@ data = data[['G1', 'G2', 'G3', 'studytime', 'absences', 'failures']]
 
 for i, row in data.iterrows():
     if pd.isna(row.values[1]):
-        print(row)
-        data.drop(i, axis=0)
+        data = data.drop(i, axis=0)
+print(data)
 
+df.loc[df[col] == 'n', col] = 0
+
+data.iloc[1]
+data.merge()
+data.loc(data[])
+data.mask()
+data.where
+data.drop()
+data.pivot_table()
+data.groupby()
 
 '''
 # Gotta specify a label, which is what we will attempt to predict with our linear regression ML

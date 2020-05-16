@@ -1,4 +1,5 @@
 #https://productmetrics.net/blog/creating-sankey-diagram-python/
+#https://medium.com/kenlok/how-to-create-sankey-diagrams-from-dataframes-in-python-e221c1b4d6b0
 import seaborn as sns
 import pandas as pd
 import ipysankeywidget
@@ -11,7 +12,7 @@ data = []
 palette = sns.color_palette('cubehelix', len(df.index) + df.Category.nunique())
 colours = palette.as_hex()
 
-level1 = df[['Category', 'UnitedKingdom']].groupby('Category').agg('sum')
+level1 = df[['Category', 'UnitedKingdom']].groupby('Category').;agg('sum')
 
 # Counter so we can iterate through the colours
 c_count = 0
