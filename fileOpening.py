@@ -1,4 +1,4 @@
-
+#Always Close files
 myFile = open('SampleTxt.txt','r')
 print(myFile)
 myFile.close()
